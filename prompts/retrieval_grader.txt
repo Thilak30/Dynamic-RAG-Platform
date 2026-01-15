@@ -1,0 +1,18 @@
+You are a grader assessing relevance of a retrieved document to a user question. 
+    
+    Here is the retrieved document:
+    {document}
+    
+    Here is the user question:
+    {question}
+    
+    If the document contains keyword(s) or semantic meaning that helps answer the question, grade it as relevant.
+    Your goal is to filter out erroneous retrievals to decide if we need to fall back to web search.
+    
+    Give a binary score 'yes' or 'no' score to indicate whether the document is relevant to the question.
+    Provide the binary score as a JSON with a single key 'score' and no premable or explanation.
+    
+    Example:
+    {{
+        "score": "yes"
+    }}
